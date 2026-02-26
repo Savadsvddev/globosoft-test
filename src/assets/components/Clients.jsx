@@ -25,7 +25,7 @@ const Clients = () => {
                             <img 
                                 src={item} 
                                 alt={`Client ${i + 1}`}
-                                className="w-full h-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                                className="w-full h-auto object-contain filter "
                             />
                         </div>
                     ))}
