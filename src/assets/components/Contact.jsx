@@ -8,25 +8,31 @@ import { IoLogoYoutube } from "react-icons/io";
 
 const Contact = () => {
     return (
-        <div className="w-full  bg-[rgb(3,7,79)] text-white flex items-center justify-between pt-3 pb-3 pl-[80px] pr-[80px]">
-            <div className="flex gap-5">
-                <div className="flex gap-[10px] items-center">
-                    <SlCallIn size={20} color="white" />
-                    <p>Call Us:02457788</p>
-                </div>
-                <p>Example@gmail.com</p>
-            </div>
-            <div className="flex gap-[20px]">
-                <div className="flex gap-[10px] items-center">
-                    <IoLogoFacebook size={20} />
-                    <RiInstagramFill size={20} />
-                    <FaTwitter size={20} />
-                    <IoLogoYoutube size={20} />
+        <div className="w-full bg-[rgb(3,7,79)] text-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-3 sm:py-4">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+                    
+                    {/* Left side - Contact Info */}
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center lg:items-start text-center sm:text-left">
+                        <div className="flex items-center gap-2 sm:gap-3">
+                            <SlCallIn size={18} sm:size={20} color="white" />
+                            <p className="text-sm sm:text-base">Call Us: 02457788</p>
+                        </div>
+                        <p className="text-sm sm:text-base">Example@gmail.com</p>
+                    </div>
 
+                    {/* Right side - Social Media + Question */}
+                    <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-center sm:text-right">
+                        <div className="flex gap-3 sm:gap-4">
+                            <IoLogoFacebook size={18} sm:size={20} className="cursor-pointer hover:text-blue-400 transition-colors" />
+                            <RiInstagramFill size={18} sm:size={20} className="cursor-pointer hover:text-pink-400 transition-colors" />
+                            <FaTwitter size={18} sm:size={20} className="cursor-pointer hover:text-blue-300 transition-colors" />
+                            <IoLogoYoutube size={18} sm:size={20} className="cursor-pointer hover:text-red-500 transition-colors" />
+                        </div>
+                        <p className="text-sm sm:text-base">? Have any question</p>
+                    </div>
                 </div>
-                <p>? Have any question</p>
             </div>
-
         </div>
     )
 }
