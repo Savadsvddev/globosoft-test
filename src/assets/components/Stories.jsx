@@ -67,7 +67,7 @@ const Stories = () => {
                                 </button>
 
                                 {/* Title Overlay */}
-                                <div className="absolute bottom-2 right-2 bg-gray-300 bg-opacity-90 z-30 w-[60%] sm:w-[62%] h-[85%] sm:h-[93%] p-2 flex items-center justify-center
+                                <div className="absolute bottom-0 right-0 bg-gray-300 bg-opacity-90 z-30 w-[60%] sm:w-[62%] h-[100%] sm:h-[100%] p-2 flex items-center justify-center
                                     [clip-path:polygon(50%_0,100%_0,100%_100%,50%_100%,0_50%)]">
                                     <p className="flex flex-col text-xs sm:text-sm font-semibold">
                                         {item.title1}
@@ -88,8 +88,8 @@ const Stories = () => {
                                 </p>
 
                                 <div className="flex gap-3 sm:gap-4 text-xs sm:text-sm">
-                                    <p className="font-semibold text-blue-500">{item.blog}</p>
-                                    <p className="border-l border-gray-300 pl-2 sm:pl-3 font-semibold text-gray-600">
+                                    <p className="font-semibold text-gray-800">{item.blog}</p>
+                                    <p className="border-l border-gray-300 pl-2 sm:pl-3 font-semibold text-gray-800">
                                         {item.date}
                                     </p>
                                 </div>

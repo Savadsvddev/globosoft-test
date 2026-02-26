@@ -71,7 +71,7 @@ const Review = () => {
                                     </div>
                                     <div className="flex gap-2 items-center">
                                         <BiLike size={16} sm:size={18} className="text-blue-500" />
-                                        <p className="text-xs sm:text-sm font-bold text-blue-500">Testimonial</p>
+                                        <p className="text-xs sm:text-sm font-bold text-gray-900">Testimonial</p>
                                     </div>
                                 </div>
                             </div>
